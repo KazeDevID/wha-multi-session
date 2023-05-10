@@ -2,13 +2,13 @@
   "name": "wha-multi-session",
   "version": "1.1.4",
   "description": "Multi Session Whatsapp Bot Library",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
     "/dist"
   ],
   "scripts": {
-    "start": "tsc && node ./src/index.js",
+    "start": "tsc && node ./dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": {
