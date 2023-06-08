@@ -17,7 +17,6 @@ import {
   saveVideoHandler,
 } from "../Utils/save-media";
 
-const msgRetryCounterMap = {};
 const sessions: Map<string, WASocket> = new Map();
 
 const callback: Map<string, Function> = new Map();
@@ -42,7 +41,6 @@ export const startSession = async (
       printQRInTerminal: options.printQR,
       auth: state,
       logger,
-      msgRetryCounterMap,
       markOnlineOnConnect: false,
       browser: Browsers.ubuntu("Chrome"),
     });
